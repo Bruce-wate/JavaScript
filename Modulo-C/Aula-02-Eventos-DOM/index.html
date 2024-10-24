@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: gray;
+        }
+
+        div{
+            height: 200px;
+            width: 300px;
+            background-color: rgb(49, 49, 126);
+            margin: auto;
+            font-size: 30px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <div id="area">
+        Interaja...
+    </div>
+
+    <script>
+    var clic = window.document.querySelector("div#area")
+
+    clic.addEventListener('click', clicar)
+    clic.addEventListener('mouseenter', entrar)
+    clic.addEventListener('mouseout', sair)
+
+    function clicar(){
+        clic.innerText = "Clicou"
+        clic.style.background = "lightblue"
+      }
+
+      function entrar(){
+        clic.innerText = "Entrou"
+      }
+
+      function sair(){
+        clic.innerText = "Saiu"
+        clic.style.background = "Blue"
+      }
+    </script>
+</body>
+</html>
