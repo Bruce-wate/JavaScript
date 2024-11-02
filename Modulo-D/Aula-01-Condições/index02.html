@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+           
+        }
+
+        p > input#ivel{
+            width: 60px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Sistema de controle de velocidade</h2>
+
+    <p>A sua velocidade foi de: <input type="number" name="ivel" id="ivel"> Km/h <input type="button" value="Ver velocidade" onclick="velocidade()"></p>
+
+    <div id="res"></div>
+
+    <script>
+        function velocidade(){      
+            var box = window.document.querySelector("p>input#ivel")
+            var vel = Number(ivel.value)
+            var resp = window.document.querySelector("div#res")
+
+            resp.innerHTML = `<p>A sua velocidade foi de ${vel} Km/h </p>` 
+            if (vel > 60) {
+                resp.innerHTML += ("<p>Você excedeu a velocidade apropriada e será multado!!</p>")
+            }
+            resp.innerHTML += "Conduza com prudencia"
+        }
+
+    </script>
+</body>
+</html>
