@@ -21,8 +21,8 @@ h1{
 
 main{  
     background-color: #ffff;
-    height: 150px;
-    width: 500px;
+    height: 330px;
+    width: 440px;
     border-radius: 16px;
     box-shadow: 6px 7px 2px #0000008a;
 
@@ -35,21 +35,33 @@ main{
 
 }
 
-main > div#sec1{
+main > div#msg{
     text-align: center;
+    padding-top: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-main > div#sec2{
-    text-align: center;
+main > div#photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div > img#imagem{
+    display: block;
+    width: 245px;
+
+    position: relative;
+    top: 30px;
 }
 
 footer{
-    background-color: white;
     text-align: center;
+    color: #ffff;
 
     position: absolute;
-    bottom: 0;
-    width: 100%;
+    top: 500px;
+    width: 100vw;
 
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
