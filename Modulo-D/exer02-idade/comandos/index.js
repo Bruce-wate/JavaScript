@@ -44,7 +44,7 @@ function verificar(){
                 img.setAttribute("src", "fotos/girlAdulta.png")
             } else {
                 //Idoso
-                img.setAttribute("src", "fotos/manIdoso.png")
+                img.setAttribute("src", "fotos/girlIdosa.png")
             }
         } 
 
