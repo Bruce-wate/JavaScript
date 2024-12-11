@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    
+    <h2>Vamos Contar</h2>
+
+    <main>
+          <p>
+            <label for="INP1">Inicio:</label>
+            <input type="number" name="INP1" id="INP1">
+          </p>
+
+          <p>
+            <label for="INP2">Fim:</label>
+            <input type="number" name="INP2" id="INP2">
+          </p>
+
+          <p>
+            <label for="step">Passo:</label>
+            <input type="number" name="step" id="step">
+          </p>
+
+          <input id="contador" type="submit" value="Contar" onclick="contar()">
+
+
+          <div id="res" style="font-size: 0.9em;">Preparando para contar...</div>
+    </main>
+
+    <footer>created by: <i>Bruce Wate</i></footer>
+
+    <script src="comandos/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    
+    <h2>Verificador de idade</h2>
+
+    <main>
+            <div id="insert">
+                <p>
+                    Adicione o ano em que nasceu: 
+                    <input type="number" name="nasc" id="nasc">
+                </p>
+
+                <p id="escolha">
+                    Sexo: 
+                    <input type="radio" name="text" id="masc" checked>
+                    <label for="masc">Homem</label>
+
+                    <input type="radio" name="text" id="fem">
+                    <label for="fem">Mulher</label>
+                </p>
+            </div>
+            
+            <p>
+                <input id="sub" type="submit" value="Verificar" onclick="verificar()">
+            </p>
+
+            <div id="res">
+                Preencha os dados acima 
+            </div>
+    </main>
+
+    <footer>created by: <i>Bruce Wate</i></footer>
+
+    <script src="comandos/index.js"></script>
+</body>
+</html>
