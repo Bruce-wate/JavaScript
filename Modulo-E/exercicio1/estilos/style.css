@@ -21,8 +21,8 @@ h2{
 }
 
 main{
-    height: 220px;
-    width:350px;
+    min-height: 220px;
+    width:340px;
     background-color: white;
     font-family: Georgia, 'Times New Roman', Times, serif;
     
@@ -31,36 +31,41 @@ main{
     padding: 20px;
     cursor: pointer;
     box-shadow: 5px 5px 1px #0000009c;
-
 }
 
-main > p{
-    padding: 10px;
+main > aside{
+    padding: 8px 0px;
 }
 
-main > p > input{
+main > aside > input#INPUT1{
     width: 100px;
-    margin-left: 2px;
+    margin-left: 3px;
+    padding-left: 4px;
 }
 
-main > p > input#INP2{
-    margin-left: 14.5px;
+main > aside > input#INPUT2{
+    width: 100px;
+    margin-left: 16px;
+    padding-left: 4px;
 }
 
-main > input[value]{
-    margin: 10px;
+main > aside > input#passo{
+    width: 100px;
+    padding-left: 4px;
+}
+
+main >  input#contador{
     padding: 3px;
+    margin: 10px 0px;
+    background-color: blueviolet;
 }
 
-main > div{
-    padding: 10px;
-}
 
 
 footer{
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
 }
 
 
